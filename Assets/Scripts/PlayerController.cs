@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,12 +31,6 @@ public class PlayerController : MonoBehaviour, IKillable
         movement.y = Input.GetAxisRaw("Vertical");
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            currentForm = allForms[1];
-            animator.runtimeAnimatorController = currentForm.animatorController;
-        }
-
     }
 
     private void FixedUpdate()
@@ -50,7 +45,12 @@ public class PlayerController : MonoBehaviour, IKillable
 
     private void changeForm()
     {
-        currentForm = allForms[1];
+        Debug.Log(allForms.FindIndex(form => form.formName == currentForm.formName) + 1);
+        Debug.Log(allForms.Count);
+        if (allForms.FindIndex(form => form.formName == currentForm.formName) + 1 < allForms.Count)
+            currentForm = allForms[allForms.FindIndex(form => form.formName == currentForm.formName) + 1];
+        else
+            currentForm = allForms[0];
         animator.runtimeAnimatorController = currentForm.animatorController;
     }
 

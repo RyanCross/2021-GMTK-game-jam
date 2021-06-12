@@ -9,6 +9,8 @@ public class ShapeshiftForms : ScriptableObject
     public float moveSpeed;
     public int maxHealth;
     public float fireRate;
+    public float projectileForce;
     public RuntimeAnimatorController animatorController;
-    public Projectile formProjectile;
+    public GameObject formProjectile;
+    public GameObject shootingStyle;
 }
