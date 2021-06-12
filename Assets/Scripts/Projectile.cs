@@ -12,12 +12,16 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject, timeToLive);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("Collision!");
-        //Instantiate hitEffect GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity)
-        // Deal Damage Event
-        Destroy(gameObject);
 
+    private void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+       IKillable target = hitInfo.GetComponent<IKillable>();
+        Debug.Log(target);
+        if (target != null) // target is something that can take dmg
+        {
+            target.TakeDamage(1);
+            Debug.Log("damage taken");
+        }
+        Destroy(gameObject);
     }
 }

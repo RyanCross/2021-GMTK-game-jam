@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IKillable
 {
     public List<ShapeshiftForms> allForms;
     public ShapeshiftForms currentForm { get; set; }
@@ -13,11 +13,14 @@ public class PlayerController : MonoBehaviour
     
     Vector2 movement;
     Vector2 mousePos;
+    [SerializeField] int curHealth;
 
     // Start is called before the first frame update
     void Start()
     {
         currentForm = allForms[0]; // 0 = default form, in this case, our humanoid elf
+        curHealth = currentForm.maxHealth;
+        Debug.Log("Current Health is:" + curHealth);
     }
 
     // Update is called once per frame
@@ -59,6 +62,22 @@ public class PlayerController : MonoBehaviour
     private void OnDisable()
     {
         GameEvents.shapeshiftTimerElapsed -= changeForm;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        curHealth -= damage;
+        
+        if(curHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        //death effects, game over event trigger, etc
+        Destroy(gameObject);
     }
 
 
