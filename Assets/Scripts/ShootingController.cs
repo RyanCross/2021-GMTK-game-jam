@@ -8,12 +8,21 @@ public class ShootingController : MonoBehaviour
     public Transform firePoint;
     public GameObject currentProjectilePrefab;
     public float bulletForce = 20f;
+    public PlayerController player;
+
+    void Start()
+    {
+        Debug.Log(player.currentForm);
+    }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
+        {
             Shoot();
+            Debug.Log(player.currentForm);
+        }          
     }
 
     void Shoot()
