@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
-        Destroy(gameObject, 2.0f);
+        Destroy(gameObject, timeToLive);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
