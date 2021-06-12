@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Clutter
+    uniqueID: 2222692229
+    locked: 0
   - name: Projectiles
     uniqueID: 3516279131
     locked: 0

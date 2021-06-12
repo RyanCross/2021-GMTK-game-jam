@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2866508130001380615}
   - component: {fileID: 2866508130001380608}
   - component: {fileID: 2866508130001380609}
+  - component: {fileID: 3177526273768181965}
   m_Layer: 0
   m_Name: Projectile_Cleaver
   m_TagString: Untagged
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -778688165
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9627c117240c7494f88a7971a922e321, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -131,3 +132,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 1.1875}
   m_EdgeRadius: 0
+--- !u!114 &3177526273768181965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2866508130001380612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383a53e1615e9c34ca4c74c7d2553cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffect: {fileID: 0}
