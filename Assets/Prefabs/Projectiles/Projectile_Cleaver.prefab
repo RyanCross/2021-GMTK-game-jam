@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2866508130001380608}
   - component: {fileID: 2866508130001380609}
   - component: {fileID: 3177526273768181965}
+  - component: {fileID: 1882342342}
   m_Layer: 0
   m_Name: Projectile_Cleaver
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,6 +134,20 @@ BoxCollider2D:
   m_Size: {x: 0.5, y: 1.1875}
   m_EdgeRadius: 0
 --- !u!114 &3177526273768181965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2866508130001380612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383a53e1615e9c34ca4c74c7d2553cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffect: {fileID: 0}
+  timeToLive: 2
+--- !u!114 &1882342342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
