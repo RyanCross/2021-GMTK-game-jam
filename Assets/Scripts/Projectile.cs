@@ -15,13 +15,17 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        IKillable target = hitInfo.GetComponent<IKillable>();
-        Debug.Log(target);
+       IKillable target = hitInfo.GetComponent<IKillable>();
         if (target != null) // target is something that can take dmg
         {
             target.TakeDamage(1);
             Debug.Log("damage taken");
         }
-        Destroy(gameObject);
+        
+        if(hitInfo.tag != "Projectile")
+        {
+            Destroy(gameObject);
+        }
+        
     }
 }
