@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour, IKillable
     public Rigidbody2D rb;
     public Camera cam;
     public Animator animator;
+    public PlayerHealthBar healthBar;
     
     Vector2 movement;
     Vector2 mousePos;
@@ -21,6 +22,9 @@ public class PlayerController : MonoBehaviour, IKillable
     {
         currentForm = allForms[0]; // 0 = default form, in this case, our humanoid elf
         curHealth = currentForm.maxHealth;
+        healthBar.SetMaxHealth(currentForm.maxHealth);
+        healthBar.SetHealth(currentForm.maxHealth);
+
         Debug.Log("Current Health is:" + curHealth);
     }
 
@@ -31,6 +35,9 @@ public class PlayerController : MonoBehaviour, IKillable
         movement.y = Input.GetAxisRaw("Vertical");
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            TakeDamage(1);
     }
 
     private void FixedUpdate()
@@ -45,12 +52,11 @@ public class PlayerController : MonoBehaviour, IKillable
 
     private void changeForm()
     {
-        Debug.Log(allForms.FindIndex(form => form.formName == currentForm.formName) + 1);
-        Debug.Log(allForms.Count);
         if (allForms.FindIndex(form => form.formName == currentForm.formName) + 1 < allForms.Count)
             currentForm = allForms[allForms.FindIndex(form => form.formName == currentForm.formName) + 1];
         else
             currentForm = allForms[0];
+
         animator.runtimeAnimatorController = currentForm.animatorController;
     }
 
@@ -67,6 +73,7 @@ public class PlayerController : MonoBehaviour, IKillable
     public void TakeDamage(int damage)
     {
         curHealth -= damage;
+        healthBar.SetHealth(curHealth);
         
         if(curHealth <= 0)
         {

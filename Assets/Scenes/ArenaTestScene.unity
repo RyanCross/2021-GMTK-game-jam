@@ -252,6 +252,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4752813237034797347, guid: a1da32b50e499be459ee7145e7fbc2d0, type: 3}
   m_PrefabInstance: {fileID: 4752813237024053954}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &28691972 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 28691972, guid: 0a337b1d5436ac44f9352628ae6199dc, type: 3}
+  m_PrefabInstance: {fileID: 3103338427540655328}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86598243abf3290488862069e1148b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &31357627
 GameObject:
   m_ObjectHideFlags: 0
@@ -11474,42 +11485,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2567845109257756347, guid: 8c3bcc9e79cae534782805d765a96d82, type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 1191786324}
-    - target: {fileID: 2567845109257756347, guid: 8c3bcc9e79cae534782805d765a96d82, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567845109257756347, guid: 8c3bcc9e79cae534782805d765a96d82, type: 3}
-      propertyPath: allForms.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567845109257756347, guid: 8c3bcc9e79cae534782805d765a96d82, type: 3}
-      propertyPath: allForms.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 7b3b6bed67dd2b3408625e66e00a7a3b, type: 2}
-    - target: {fileID: 2567845109257756347, guid: 8c3bcc9e79cae534782805d765a96d82, type: 3}
-      propertyPath: allForms.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 9f10116077df6da44970221994b3456f, type: 2}
-    - target: {fileID: 2567845109257756347, guid: 8c3bcc9e79cae534782805d765a96d82, type: 3}
-      propertyPath: allForms.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 9cce062cfb522204793a574fe71a832f, type: 2}
-    - target: {fileID: 2567845109257756356, guid: 8c3bcc9e79cae534782805d765a96d82, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567845109257756357, guid: 8c3bcc9e79cae534782805d765a96d82, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7e7f368dc64cd334592ecbf6df69e251, type: 3}
-    - target: {fileID: 2866508130001380609, guid: afef8f2998eb8fb42b96a5b98f9237da, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2866508130001380612, guid: afef8f2998eb8fb42b96a5b98f9237da, type: 3}
       propertyPath: m_Name
       value: Projectile_Cleaver
@@ -11567,9 +11542,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2866508130001380612, guid: afef8f2998eb8fb42b96a5b98f9237da, type: 3}
-      propertyPath: m_Name
-      value: Projectile_Cleaver
+    - target: {fileID: 207497843, guid: 0a337b1d5436ac44f9352628ae6199dc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 207497843, guid: 0a337b1d5436ac44f9352628ae6199dc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103338427636072323, guid: 0a337b1d5436ac44f9352628ae6199dc, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103338427636072323, guid: 0a337b1d5436ac44f9352628ae6199dc, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3103338427636072323, guid: 0a337b1d5436ac44f9352628ae6199dc, type: 3}
       propertyPath: m_RootOrder
@@ -11840,13 +11827,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1191786324}
     - target: {fileID: 6097622430293769253, guid: 8c3bcc9e79cae534782805d765a96d82, type: 3}
-      propertyPath: allForms.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6097622430293769253, guid: 8c3bcc9e79cae534782805d765a96d82, type: 3}
-      propertyPath: allForms.Array.data[2]
+      propertyPath: healthBar
       value: 
-      objectReference: {fileID: 11400000, guid: 9cce062cfb522204793a574fe71a832f, type: 2}
+      objectReference: {fileID: 28691972}
     - target: {fileID: 6097622430293769257, guid: 8c3bcc9e79cae534782805d765a96d82, type: 3}
       propertyPath: m_Name
       value: Player
