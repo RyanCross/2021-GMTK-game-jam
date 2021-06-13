@@ -132,9 +132,11 @@ MonoBehaviour:
   allForms:
   - {fileID: 11400000, guid: 7b3b6bed67dd2b3408625e66e00a7a3b, type: 2}
   - {fileID: 11400000, guid: 9f10116077df6da44970221994b3456f, type: 2}
+  - {fileID: 11400000, guid: 9cce062cfb522204793a574fe71a832f, type: 2}
   rb: {fileID: 6097622430293769258}
   cam: {fileID: 0}
   animator: {fileID: 6097622430293769256}
+  healthBar: {fileID: 0}
   curHealth: 0
 --- !u!50 &6097622430293769258
 Rigidbody2D:
@@ -173,6 +175,8 @@ MonoBehaviour:
   currentProjectilePrefab: {fileID: 2866508130001380612, guid: afef8f2998eb8fb42b96a5b98f9237da, type: 3}
   bulletForce: 20
   player: {fileID: 6097622430293769253}
+  bulletSpeed: 0
+  fireRate: 2
 --- !u!95 &6097622430293769256
 Animator:
   serializedVersion: 3

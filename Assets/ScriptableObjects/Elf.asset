@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   formName: Elf
   moveSpeed: 4
-  maxHealth: 100
+  maxHealth: 10
   fireRate: 0.05
   projectileForce: 20
   animatorController: {fileID: 9100000, guid: b8511d9cc62a8f246974672e172abef6, type: 2}
