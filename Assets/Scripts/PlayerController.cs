@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour, IKillable
     public Camera cam;
     public Animator animator;
     public PlayerHealthBar healthBar;
+    public SpriteRenderer renderer;
     
     Vector2 movement;
     Vector2 mousePos;
@@ -36,6 +37,21 @@ public class PlayerController : MonoBehaviour, IKillable
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
+        if (movement.x != 0f || movement.y != 0f)
+            animator.SetBool("isMoving", true);
+        else
+            animator.SetBool("isMoving", false);
+
+        if (movement.x < 0)
+        {
+            renderer.flipX = true;
+        }
+        if (movement.x > 0)
+        {
+            renderer.flipX = false;
+        }
+
+
         if (Input.GetKeyDown(KeyCode.Space))
             TakeDamage(1);
     }
@@ -43,11 +59,6 @@ public class PlayerController : MonoBehaviour, IKillable
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * currentForm.moveSpeed * Time.fixedDeltaTime);
-
-        Vector2 lookDir = mousePos - rb.position; // This vector math gets us a vector that points from our player to our mouse position
-        // set the rotation of the player using the look direction
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
-        rb.rotation = angle;
     }
 
     private void changeForm()
