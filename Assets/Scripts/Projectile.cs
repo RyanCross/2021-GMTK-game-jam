@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-       IKillable target = hitInfo.GetComponent<IKillable>();
+        IKillable target = hitInfo.GetComponent<IKillable>();
         Debug.Log(target);
         if (target != null) // target is something that can take dmg
         {

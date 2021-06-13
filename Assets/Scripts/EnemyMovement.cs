@@ -9,22 +9,17 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D myBody;
     Vector2 movement;
 
-    private float moveSpeed = 1.0f;
+    [SerializeField] float moveSpeed = 1.0f;
+    [SerializeField] float attackDistance = 2.0f; //should be 0 or very small for melee enemies
 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(player == null)
+        if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player");
         }
-        if(myBody == null)
+        if (myBody == null)
         {
             myBody = GetComponent<Rigidbody2D>();
         }
@@ -35,27 +30,41 @@ public class EnemyMovement : MonoBehaviour
         //Player to the left
         if(player.transform.position.x < gameObject.transform.position.x)
         {
-            gameObject.transform.localScale = new Vector3(-1, 1, 1); //look left
+            //Look left
+            gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            //Move left if moving
             movement.x = -1;
         }
         //Player to the right
         else if(player.transform.position.x > gameObject.transform.position.x)
         {
-            gameObject.transform.localScale = new Vector3(1, 1, 1); //look right
+            //look right
+            gameObject.transform.localScale = new Vector3(1, 1, 1); 
+            //Move right if moving
             movement.x = 1;
         }
              
         //Player above
         if(player.transform.position.y > gameObject.transform.position.y)
         {
+            //Move up if moving
             movement.y = 1;
-            myBody.MovePosition(myBody.position + movement * moveSpeed * Time.fixedDeltaTime);
+            //Move if not within attack range
+            if(Vector3.Distance(myBody.position, player.transform.position) > attackDistance)
+            {
+                myBody.MovePosition(myBody.position + movement * moveSpeed * Time.fixedDeltaTime);
+            }
         }
         //Player below
-        if (player.transform.position.y < gameObject.transform.position.y)
+        else if (player.transform.position.y < gameObject.transform.position.y)
         {
+            //Move down if moving
             movement.y = -1;
-            myBody.MovePosition(myBody.position + movement * moveSpeed * Time.fixedDeltaTime);
+            //Move if not within attack range
+            if (Vector3.Distance(myBody.position, player.transform.position) > attackDistance)
+            {
+                myBody.MovePosition(myBody.position + movement * moveSpeed * Time.fixedDeltaTime);
+            }
         }
     }
 }
