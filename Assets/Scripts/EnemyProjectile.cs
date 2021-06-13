@@ -21,6 +21,14 @@ public class EnemyProjectile : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().velocity = newvector;
     }
 
+    private void Update()
+    {
+        Vector3 rotation = Quaternion.LookRotation(gameObject.transform.position).eulerAngles;
+        rotation.x = 0f;
+        rotation.z = 0f;
+
+        transform.rotation = Quaternion.Euler(rotation);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
