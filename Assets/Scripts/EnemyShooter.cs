@@ -26,7 +26,7 @@ public class EnemyShooter : MonoBehaviour
 
         if(timeSinceFired >= timeToFire)
         {
-            GameObject bullet = Instantiate(currentProjectilePrefab, gameObject.transform, true);
+            GameObject bullet = Instantiate(currentProjectilePrefab, gameObject.transform.position, gameObject.transform.rotation);
             timeSinceFired = 0f;
             Debug.Log("Firing");
         }
