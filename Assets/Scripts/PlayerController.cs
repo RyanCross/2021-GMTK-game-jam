@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour, IKillable
     public Animator animator;
     public PlayerHealthBar healthBar;
     public SpriteRenderer renderer;
+    public GameController gameController;
     
     Vector2 movement;
     Vector2 mousePos;
@@ -95,6 +96,7 @@ public class PlayerController : MonoBehaviour, IKillable
     public void Die()
     {
         //death effects, game over event trigger, etc
+        gameController.GameOver();
         Destroy(gameObject);
     }
 
