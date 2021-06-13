@@ -100,5 +100,12 @@ public class PlayerController : MonoBehaviour, IKillable
         Destroy(gameObject);
     }
 
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        Debug.Log(collider.tag);
+        if (collider.tag == "Finish")
+            gameController.GameOver();
+
+    }
 
 }
