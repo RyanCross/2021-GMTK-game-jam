@@ -4,7 +4,7 @@ You are Jekyll. An extremely unfortunate individual. You have awoken in a dark d
 Achieve unity with your newfound "friends",  master your many forms, and escape the dungeon!
 
 # Play the Game
-Download the windows build (recommended) or play the webGL version on [itch|https://ryancross.itch.io/jekyll]
+Download the windows build (recommended) or play the webGL version on [itch](https://ryancross.itch.io/jekyll)
 
 # Project Information
 [Trello](https://trello.com/b/q2ckK857/gmtk-game-jam-2021)
