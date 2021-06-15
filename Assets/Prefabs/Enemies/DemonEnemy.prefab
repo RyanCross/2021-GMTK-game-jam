@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 5078570987164500829}
   - component: {fileID: 5078570987164500828}
   - component: {fileID: 5078570987164500831}
+  - component: {fileID: 808456709939717774}
+  - component: {fileID: 743158166}
   m_Layer: 0
   m_Name: DemonEnemy
   m_TagString: Untagged
@@ -123,6 +125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5103807b8a69968498da280cb16c5429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 1
+  attackDistance: 2
+  aggroRange: 8
 --- !u!50 &5078570987164500831
 Rigidbody2D:
   serializedVersion: 4
@@ -144,3 +149,35 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &808456709939717774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5078570987164500816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 368da0a17eafb184084d21f4776a8733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 10
+--- !u!95 &743158166
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5078570987164500816}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48f90a289a611f847b7c5437ab366763, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

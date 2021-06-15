@@ -15,8 +15,8 @@ MonoBehaviour:
   formName: Dragon
   moveSpeed: 7
   maxHealth: 20
-  fireRate: 1
+  fireRate: 0.25
   projectileForce: 15
   animatorController: {fileID: 9100000, guid: acf6e25761ad8ce48bbadb553225e276, type: 2}
-  formProjectile: {fileID: 2866508130001380612, guid: afef8f2998eb8fb42b96a5b98f9237da, type: 3}
+  formProjectile: {fileID: 4484182080433649062, guid: de72bd6d401bcb643a5d942df862dd96, type: 3}
   shootingStyle: {fileID: 1280703851722980069, guid: 71967a658367f7242a34dd8dce225cf1, type: 3}
