@@ -55,14 +55,14 @@ In *Jekyll*, SO's were used to store all of the stats & information about each o
 ### Planning
 I've saved the least technical bit for the end of this section, but planning is so important for a successful jam. Here's a few tips to help you with your next jam.
 1. When in the idea creation phase, don't _wait_ for inspiration. Sit down and start writing (or doodling). Putting things on paper will help your brain get past the surface thoughts swirling around in your head and really help with brainstorming. 
-2. Make a list of your _capabilities_. What you've done prior or what you know you can do easily. For some people, like myself, this list may very short. This list isn't meant to be a hard limit on what you can create, but it will aid in realistic idea generation and help overscoping.
-3. Use a task management board like Trello to track tasks.
-4. Follow up on 3, create a "Minimum Viable Product" column, this should ideally contain only the tasks that are required for you to have some functioning game. 
+2. Make a list of your _capabilities_. What you've done prior or what you know you can do easily. For some people, like myself, this list may be very short. This list isn't meant to be a hard limit on what you can create, but it will aid in realistic idea generation and help protect against overscoping.
+3. Use a task management board like Trello. Create small, but meaningful tasks!
+4. Follow up on 3, create a "Minimum Viable Product" column, this should ideally contain only the tasks that are required for you to have a functioning game. 
 
-After review, this jam probably my most successful at planning. Even though the game barely scratched the surface of the idea, it (mostly) works, and is a functioning, if barebones representation of the idea. Which in 48hrs is something to be proud of.
+After review, this jam probably my most successful at planning. Even though the game barely scratched the surface of the idea, it (mostly) works; and is a functioning, if barebones representation of the idea. Which in 48hrs is something to be proud of.
 
 # Challenges and Limitations
-Lastly a few personal challenges and limitations I encoutered in the jam. Rapid fire style.
+Lastly, a few personal challenges and limitations I encountered in the jam. Rapid fire style.
 1. Math is hard, and my weak background in the subject definitely hurt me when trying to create different shooting patterns for each form. Need to spend some quality time understanding Quaternions and Vector math.
 2. Hit FX are REALLY important for communicating damage, and neglecting them until the very end was definitely a mistake, I should have prioritized this over the third dragon form.
 3. Last but not least: `beer + sleep deprivation = messy code.` 
