@@ -45,14 +45,14 @@ Setup:
 4. Paint away!
 
 
-### Scriptable Objects
-It feels like I just scratched the surface of these, but first impressios are that they're powerful data containers for Unity with a lot of flexibility.
+## Scriptable Objects
+It feels like I just scratched the surface of these, but first impressions are that they're powerful data containers for Unity with a lot of flexibility.
 
 In *Jekyll*, SO's were used to store all of the stats & information about each of Jekyll's forms. This included animation controllers and other game objects like each form's projectile prefab. These object's made form swapping logic easy to implement once the form objects were built. It also had the added perk of making it super easy to tweak the stats on each form!
 
 ![scriptableObjects](https://user-images.githubusercontent.com/10676622/121979872-9bce5300-cd50-11eb-9348-59fe9f1211f3.png)
 
-### Planning
+## Planning
 I've saved the least technical bit for the end of this section, but planning is so important for a successful jam. Here's a few tips to help you with your next jam.
 1. When in the idea creation phase, don't _wait_ for inspiration. Sit down and start writing (or doodling). Putting things on paper will help your brain get past the surface thoughts swirling around in your head and really help with brainstorming. 
 2. Make a list of your _capabilities_. What you've done prior or what you know you can do easily. For some people, like myself, this list may be very short. This list isn't meant to be a hard limit on what you can create, but it will aid in realistic idea generation and help protect against overscoping.
