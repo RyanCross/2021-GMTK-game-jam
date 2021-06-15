@@ -8,7 +8,7 @@ This will be a recap some of the most useful things learned throughout the jam a
 # The Valuable Stuff 
 
 ## Cinemachine's 2D Camera
-An easy recommend for anyone working in 2D, you get an extremely customizable camera with high quality features out of the box. This saved SO much time and it's an easy package install from the Asset Manager. 
+An easy recommend for anyone working in 2D. You get an extremely customizable camera with high quality features out of the box. This saved SO much time, and it's a simple package install from the Asset Manager. 
 
 Perks:
   - Mouse Lookahead
@@ -16,7 +16,7 @@ Perks:
   - Softzones (like deadzones, but _gradual_)
   - Much more
 
-It's as easy as creating a 2D camera from the Cinemachine tab and setting your player as the Follow parameter in the inspector.
+Setup is as easy as creating a 2D camera from the Cinemachine tab and setting your player as the Follow parameter in the inspector.
 
 ## TileMaps & Tile Palettes
 It hurts my soul that I did any sprite based level development without these tools. Utilizing the tilemap & palette workflow makes map building extremely fast and easy. 
@@ -59,9 +59,9 @@ I've saved the least technical bit for the end of this section, but planning is 
 3. Use a task management board like Trello. Create small, but meaningful tasks!
 4. Follow up on 3, create a "Minimum Viable Product" column, this should ideally contain only the tasks that are required for you to have a functioning game. 
 
-After review, this jam probably my most successful at planning. Even though the game barely scratched the surface of the idea, it (mostly) works; and is a functioning, if barebones representation of the idea. Which in 48hrs is something to be proud of.
+After review, this jam was probably my most successful of my 4 jams at the planning stage. Even though the game barely scratched the surface of the idea, it (mostly) works; and is a functioning, if barebones representation of the idea. Which in 48hrs is something to be proud of.
 
-# Challenges and Limitations
+# Challenges, Limitations, Realizations
 Lastly, a few personal challenges and limitations I encountered in the jam. Rapid fire style.
 1. Math is hard, and my weak background in the subject definitely hurt me when trying to create different shooting patterns for each form. Need to spend some quality time understanding Quaternions and Vector math.
 2. Hit FX are REALLY important for communicating damage, and neglecting them until the very end was definitely a mistake, I should have prioritized this over the third dragon form.
