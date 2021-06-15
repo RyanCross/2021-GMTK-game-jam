@@ -1,7 +1,7 @@
 # About
-This is a postmortem of _Jekyll_, a top-down shooter about a character that is constantly swapping between different forms against their will. 
+This is a postmortem of _Jekyll_, a top-down shooter about a character that is constantly swapping between different forms against their will. You can play/rate it **[here](https://github.com/RyanCross/2021-GMTK-game-jam/blob/main/postmortem.md).**
 
-The goal was to force the player to be constantly adapting to the different playstyles of each form, strategically utilizing the strengths of each form to take out enemies, and mitigating each form's weaknesses on the fly. You can play/rate it [here|https://github.com/RyanCross/2021-GMTK-game-jam/blob/main/postmortem.md]
+The goal was to force the player to be constantly adapting to the different playstyles of each form, strategically utilizing the strengths of each form to take out enemies, and mitigating each form's weaknesses on the fly. 
 
 This will be a recap some of the most useful things learned throughout the jam as well as some of the challenges. I hope it will be useful to some jammer's out there.
 
