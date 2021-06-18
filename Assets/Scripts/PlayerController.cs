@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour, IKillable
     public Animator animator;
     public PlayerHealthBar healthBar;
     public SpriteRenderer renderer;
+    public GameController gameController;
     
     Vector2 movement;
     Vector2 mousePos;
@@ -95,8 +96,16 @@ public class PlayerController : MonoBehaviour, IKillable
     public void Die()
     {
         //death effects, game over event trigger, etc
+        gameController.GameOver();
         Destroy(gameObject);
     }
 
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        Debug.Log(collider.tag);
+        if (collider.tag == "Finish")
+            gameController.GameOver();
+
+    }
 
 }
