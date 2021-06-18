@@ -21,7 +21,7 @@ public class ShapeshiftTimerController : MonoBehaviour
         if (shapeshiftTimerSlider.value == shapeshiftTimerSlider.maxValue)
         {
             shapeshiftTimerSlider.value = 0;
-            GameEvents.shapeshiftTimerElapsed();
+            GameEvents.shapeshiftTimerElapsed?.Invoke();
         }
 
     }
